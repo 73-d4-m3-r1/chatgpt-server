@@ -1,5 +1,5 @@
 import express from "express";
-import { getChatResponse } from "../services/openaiService.js";
+import { getChatResponse } from "../services/openaiServices.js";
 const router = express.Router();
 
 router.post("/", async (req, res) => {
