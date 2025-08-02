@@ -30,5 +30,7 @@ export async function getChatResponse(message) {
     }
   );
 
-  return response.data.choices[0].message.content;
+    const fullReply = response.data.choices[0].message.content;
+    const limitedReply = fullReply.substring(0, 877);
+    return limitedReply;
 }
